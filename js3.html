@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        background-color: rgb(4, 189, 189);
+        color: black;
+        width: 100px;
+        height: 50px;
+        font-size: x-large;
+
+    }
+</style>
+<body>
+    
+   <label for="fnum">Enter First Number</label>
+    <input type="text" id="demo1"><br><br>
+
+    <label for="snum">Enter second Number</label>
+    <input type="text" id="demo2"><br><br>
+
+    
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button><br><br>
+    <label for="rsult">Result</label>
+    <input type="text" id="demo3">
+   
+
+
+</body>
+<script>
+     function add(){
+    
+        a=Number( document.getElementById("demo1").value);
+        b=Number(document.getElementById("demo2").value);
+       
+           
+            c=a+b;
+            document.getElementById("demo3").value=c;
+        }
+        function sub(){
+            a=Number( document.getElementById("demo1").value);
+        b=Number(document.getElementById("demo2").value);
+       
+           
+            c=a-b;
+            document.getElementById("demo3").value=c;
+        }
+        function mul(){
+    
+    a=Number( document.getElementById("demo1").value);
+    b=Number(document.getElementById("demo2").value);
+   
+       
+        c=a*b;
+        document.getElementById("demo3").value=c;
+    }
+    function div(){
+    
+    a=Number( document.getElementById("demo1").value);
+    b=Number(document.getElementById("demo2").value);
+   
+       
+        c=a/b;
+        document.getElementById("demo3").value=c;
+    }
+
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        background-color: black;
+        color: aliceblue;
+        width:150px;
+        height: 50px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: x-large;
+    }
+</style>
+<body>
+    <center>
+    <label for="fnum">Enter First Number</label>
+    <input type="text" id="demo1">
+    <label for="snum">Enter Second Number</label>
+    <input type="text" id="demo2"><br><br>
+    <button onclick="swap1()">Swap</button><br><br>
+    <label for="fnum">First Number</label>
+    <input type="text" id="demo3">
+    <label for="snum"> Second Number</label>
+   <input type="text" id="demo4">
+</center>
+   <script>
+   function swap1(){
+        a=Number(document.getElementById("demo1").value);
+        b=Number(document.getElementById("demo2").value);
+       
+          c=a;
+          a=b;
+          b=c;
+      Number(document.getElementById("demo3").value=a);
+      Number(document.getElementById("demo4").value=b);
+
+      
+   }  
+
+
+
+    
+   </script>
+</body>
+</html>
