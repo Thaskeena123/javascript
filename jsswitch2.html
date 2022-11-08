@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch example2</title>
+</head>
+<body>
+    <input id="demo1">
+    <button onclick="myclick()">Try it</button>
+    <p id="demo"></p>
+    
+
+    
+</body>
+
+<script>
+    function myclick(){
+        var text;
+        var Fruit=document.getElementById("demo1").value;
+   
+    
+    switch (Fruit) {
+        case "Banana":
+           text= "Banana is good";
+            break;
+        case "Apple":
+            text="Apple is good";
+            break;
+        case "Pinapple":
+            text="Pinapple is good";
+            break;
+        case "Pappaya":
+            text="Pappaya is good";
+            break;
+        default:
+            text="Unavailable Fruit";
+            break;
+    }
+
+    document.getElementById("demo").innerHTML=text;
+}
+</script>
+</html>
